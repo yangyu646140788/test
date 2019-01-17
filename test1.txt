@@ -5,5 +5,3 @@ add fun1
 add fun2
 code conclick1
 code conclick2
-add test1
-add test2
