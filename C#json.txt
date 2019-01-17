@@ -52,7 +52,7 @@ var data = new
                         }
                     }
                 };
-
+add fun3
 
 {
   "submitInteraction": {
