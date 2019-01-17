@@ -1,5 +1,7 @@
+add fun1
 var data = new
                 {
+add fun2
                     submitInteraction = new
                     {
                         externalCaseId = externalCaseId,
