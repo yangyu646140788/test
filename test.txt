@@ -2,3 +2,4 @@ abc123!
 mima
 maka
 add fun1
+add fun2
