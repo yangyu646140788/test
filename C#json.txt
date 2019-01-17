@@ -1,0 +1,100 @@
+var data = new
+                {
+                    submitInteraction = new
+                    {
+                        externalCaseId = externalCaseId,
+                        originCountryCode = "CN",
+                        origin = "IDA",
+                        deliveryMethod = deliveryMethod,
+                        statusCode = questionInfo.Status,
+                        inquirer = new
+                        {
+                            inquirerId = inquirerId,
+                            person = new
+                            {
+                                firstName = hcpInfo.UserName.Substring(0, 1),
+                                lastName = hcpInfo.UserName.Substring(1),
+                                countryCode = "CN",
+                                customerClass = "PROFESSIONAL",
+                                contactInfo = new
+                                {
+                                    emailAddress = hcpInfo.Email
+                                }
+                            }
+                        },
+                        referrer = new
+                        {
+                            referrerId = inquirerId,
+                            person = new
+                            {
+                                firstName = hcpInfo.UserName,
+                                lastName = hcpInfo.UserName,
+                                middleInitials = string.Empty,
+                                countryCode = "CN",
+                                contactInfo = new
+                                {
+                                    emailAddress = hcpInfo.Email
+                                }
+                            }
+                        },
+                        interactionContactInfo = new
+                        {
+                            emailAddress = hcpInfo.Email
+                        },
+                        requests = new[]
+                        {
+                            new{
+                                productCode = string.IsNullOrEmpty( questionInfo.ExternalID)? questionInfo.NewsId:questionInfo.ExternalID,
+                                productName = "IDA-Medical" + questionInfo.NewsId,
+                                productDescription = "",
+                                requestDetail = questionInfo.Description
+                            }
+                        }
+                    }
+                };
+
+
+{
+  "submitInteraction": {
+    "externalCaseId": "ICONT_00000068", 
+    "originCountryCode": "US", 
+    "origin": "LWRE", 
+    "deliveryMethod": "EMAIL", 
+    "statusCode": "OPEN", 
+    "inquirer": {
+      "inquirerId": "testing123456", 
+      "person": {
+        "firstName": "John", 
+        "lastName": "Smith", 
+        "countryCode": "Malaysia", 
+        "customerClass": "PROFESSIONAL", 
+        "contactInfo": {
+          "emailAddress": "john.smith@testing.com"
+        }
+      }
+    }, 
+    "referrer": {
+      "referrerId": "PERSON_kdpl220", 
+      "person": {
+        "firstName": "Kelly", 
+        "lastName": "Wallace", 
+        "middleInitials": "", 
+        "countryCode": "IN", 
+        "contactInfo": {
+          "emailAddress": "kelly.wallace@astrazeneca.com"
+        }
+      }
+    }, 
+    "interactionContactInfo": {
+      "emailAddress": "heather.pesterfield@uescape.com"
+    }, 
+    "requests": [
+      {
+        "productCode": "999_000000010007US", 
+        "productName": "Brilinta", 
+        "productDescription": "naloxegol", 
+        "requestDetail": "This is a test - Carl Mastyla."
+      }
+    ]
+  }
+}
