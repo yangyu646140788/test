@@ -3,4 +3,5 @@ mima
 maka
 add fun1
 add fun2
+code conclick1
 code conclick2
