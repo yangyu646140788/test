@@ -3,4 +3,8 @@ mima
 maka
 add fun1
 add fun2
+<<<<<<< .merge_file_a14660
 code conclick234
+=======
+code conclick1
+>>>>>>> .merge_file_a06652
